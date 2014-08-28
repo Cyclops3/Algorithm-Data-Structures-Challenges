@@ -1,0 +1,75 @@
+/* Sid is obsessed about reading short stories. Being a CS student, he is doing some interesting frequency analysis with the books. He has two short story books. He chooses strings having length a from the first book and strings having length b from the second one. The strings are such that the difference of length is <= 1
+
+i.e.
+
+|a-b|<=1, where |x| represents the absolute value of x.
+He believes that both the strings should be anagrams based on his experiment. Your challenge is to help him find the minimum number of characters of the first string he needs to change to make it an anagram of the second string. He can neither add a character nor delete a character from the first string. Only replacement of the original characters with the new ones is allowed.
+
+Input Format
+
+The first line will contain an integer T representing the number of test cases. Each test case will contain a string having length (a+b) which will be concatenation of both the strings described above in the problem. The string will only contain small letters and there will be no spaces in the string.
+
+Output Format
+
+An integer corresponding to each test case is printed in a different line i.e., the number of changes required for each test case. Print '-1' if it is not possible.
+
+Constraints
+
+1<=T<=100 
+length of input string i.e. 1<=a+b<=10000
+
+Solution:
+Lets us consider that the length of the given string is X. If X is an odd number, we can't break it into two strings of 
+equal length. As we know, two strings having unequal length cannot be anagrams. So, the required output will be "-1". 
+Now suppose the length of string is an even number, we can change any character of the string to any alphabet. 
+So, only difference of number of each character matters. We can count the difference of number of occurances of each 
+character in the first half and the second half i.e., from 'a' to 'z'. Our required output will be half of sum of
+magnitude of difference in number of occurances of each character.
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int mod (int x)
+{
+    if(x<0)
+        return (-1)*x;
+    else
+        return x;
+}
+
+int main()
+{
+    string str;
+    int T,x,i,sum;
+    cin>>T;
+    assert(1<=T && T<=100);
+    int count[26];
+    while(T--)
+    {
+        for(i=0 ;  i<26 ; i++)
+            count[i] = 0;
+        sum =0;
+        cin>>str;
+        x = str.length();
+
+        assert(1<=x && x<=10000);
+        if(x%2==1)
+            cout<<"-1"<<endl;
+        else
+        {
+            for(i=0 ; i<x/2 ; i++)
+                count[str[i] - 'a']++;
+            for(i=x/2 ; i<x ; i++)
+                count[str[i] - 'a']--;
+
+            for(i=0 ; i<26 ; i++)
+            {
+                sum = sum + mod(count[i]);
+            }
+            sum = sum/2;
+            cout<<sum<<endl;
+        }
+    }
+    return 0;
+}
