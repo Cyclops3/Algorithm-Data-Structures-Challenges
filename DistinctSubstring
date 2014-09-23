@@ -1,0 +1,56 @@
+//Program to print length of longest distinct substring
+
+include <iostream>
+#include<string>
+#include<string.h>
+using namespace std;
+ int longest(string);
+
+int longest(string words) {
+	int len= words.length();
+	int hash[26];
+	for(int j=0; j<26;j++) 
+		hash[j]=-1;
+		int cur_len=0;
+		int max_len=0;
+	for(int i=0; i<len; i++) {
+		if(hash[words[i]-'a']==-1){
+			cur_len++;
+			hash[words[i]-'a']= i;
+		}
+		else if (hash[words[i]-'a']!=-1) {
+			if((i-(hash[words[i]-'a']))<=cur_len){
+				cur_len= i-(hash[words[i]-'a']);
+				hash[words[i]-'a']=i;
+				
+			}
+				
+			if((i-(hash[words[i]-'a']))>cur_len){
+				hash[words[i]-'a']=i;
+				cur_len++;
+				
+			}
+		}
+		if(cur_len>max_len)
+			max_len=cur_len;
+		
+		
+	}
+	return max_len;
+	
+	
+	
+}
+	
+	
+
+int main() {
+	string word;
+
+	cin>>word;
+	int a= longest(word);
+	cout<<a;
+	
+	// your code goes here
+	return 0;
+}
