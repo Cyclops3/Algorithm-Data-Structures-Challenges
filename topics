@@ -1,0 +1,87 @@
+
+How to store array of words from string
+http://os.inf.tu-dresden.de/Studium/MkK//SS2014/02_threads.pdf
+
+http://www.studytonight.com/cpp/function-overriding.php
+ virtual functions with internal working:
+ http://www.learncpp.com/cpp-tutorial/125-the-virtual-table/
+
+
+http://www.careercup.com/question?id=15936662
+
+http://www.qnx.com/developers/docs/6.4.1/neutrino/getting_started/s1_procs.html
+
+http://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/
+
+http://stackoverflow.com/questions/21097253/how-does-the-strtok-function-in-c-work
+
+http://stackoverflow.com/questions/4687423/trying-to-understand-strtok
+
+http://yougeeks.blogspot.in/2014/03/a-building-has-n-steps-aperson-can-take.html
+
+ Discussion regarding demand paging. Then the interviewer asked me to give a detailed implementation of demand paging, using object-oriented approach, considering everything from page tables to swap disk I/O to page replacement policies.
+
+memset(arr, 0, sizeof(arr));: Sets all elements of arr (last is number of parameters) to 0.
+
+http://www.geeksforgeeks.org/reverse-words-in-a-given-string/
+
+http://stackoverflow.com/questions/5796023/tower-of-hanoi-problem
+
+Trie, LRU Cache, Queue using Stacks, Stacks using Queue
+
+http://www.geeksforgeeks.org/implement-lru-cache/
+
+http://www.geeksforgeeks.org/count-set-bits-in-an-integer/
+guitar007
+
+Create array from input:
+int *visited = (int *)malloc(sizeof(int)*NO_OF_CHARS);
+
+http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+
+https://www.cs.auckland.ac.nz/~jmor159/PLDS210/heaps.html
+
+http://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+
+http://stackoverflow.com/questions/3064559/how-is-vector-implemented-in-c
+
+vector: dynamically allocated array
+map/set: red- black tree
+
+http://www.geeksforgeeks.org/reentrant-function/
+
+http://stackoverflow.com/questions/4199694/data-structure-for-text-editor
+
+http://stackoverflow.com/questions/3952092/how-can-a-thread-function-access-variables-of-the-parent-thread: not understood
+
+http://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
+
+What does printf, scanf, cin, cout return
+
+n ary tree: imp 
+poinnters, pointers of pointers
+multiple inheritance: possible in c++, not java
+garbage collection: how in c++
+bit wise manipulations
+
+2) How do you know where the memory leaks when you have multiple files?
+3) What are virtual destructors?
+4) What should be done when an exception occurs in the constructor?
+5) What can be maximum memory that a process can have in 32-bit machine? What assigns a process this memory?
+
+http://www.advancedlinuxprogramming.com/alp-folder/alp-ch04-threads.pdf
+
+http://www.geeksforgeeks.org/bridge-in-a-graph/
+
+To code:
+DFS, BFS.
+Heaps, Binary Search Tree
+LRU, Cache
+Queue, Stacks
+Linked List
+code producer consumer, test and set
+
+Work
+
+http://www.smart-systems-integration.org/public/documents/publications/Internet-of-Things_in_2020_EC-EPoSS_Workshop_Report_2008_v3.pdf
+
