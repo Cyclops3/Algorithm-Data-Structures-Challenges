@@ -1,0 +1,48 @@
+5<<2
+means: 101<<22 = 10100 or 100 depending on number of bits
+
+if(n%2==0)
+then rightmost bit is 0
+else
+rightmost bit is 1
+
+
+We need to note few facts of binary numbers. The expression x & -x will isolate right most set bit in x (ensuring x will use 2′s complement form for negative numbers). If we add the result to x, right most string of 1′s in x will be reset, and the immediate ’0′ left to this pattern of 1′s will be set, which is part [B] of above explanation. For example if x = 156, x & -x will result in 00000100, adding this result to x yields 10100000 (see part D). We left with the right shifting part of pattern of 1′s (part A of above explanation).
+
+
+http://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/
+
+http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/: Done
+
+http://stackoverflow.com/questions/2182002/convert-big-endian-to-little-endian-in-c-without-using-provided-func
+
+http://stackoverflow.com/questions/5686459/what-is-the-maximum-memory-available-to-a-c-application-on-32-bit-windows
+
+http://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8_MainMemory.html
+
+To pass array inside struct:
+structvar.arr 
+
+for receiving: int arr[] or int *arr
+
+LRU:
+queue as dll:
+struct node {
+struct node *prev, *next;
+int pagenumber;
+}
+Hashmap:
+strict node *arr[capacity]; : 
+//Array of node* type: To store addresses of nodes
+
+Now, if value not there,
+struct node *temp;
+temp->data= value; //Do other links
+arr[i]= temp; // Both of node* type
+
+If there,
+node *temp= arr[value];
+
+www.cs.utexas.edu/users/witchel/372/lectures/03.Threads.ppt
+
+http://www.geeksforgeeks.org/write-an-efficient-method-to-check-if-a-number-is-multiple-of-3/
