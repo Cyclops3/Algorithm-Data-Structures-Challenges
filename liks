@@ -7,3 +7,103 @@ http://www.geeksforgeeks.org/count-ways-reach-nth-stair/
 http://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-1s/
 
 http://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-1s/
+
+http://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
+
+http://www.geeksforgeeks.org/fix-two-swapped-nodes-of-bst/
+
+http://www.geeksforgeeks.org/serialize-deserialize-binary-tree/
+
+http://stackoverflow.com/questions/4487438/maximum-sum-of-non-consecutive-elements
+
+http://superuser.com/questions/593847/how-many-memory-addresses-can-we-get-with-a-32-bit-processor-and-1gb-ram
+
+https://sites.google.com/site/sureshdevang/design-patterns-vs-frameworks
+
+http://highscalability.com/blog/2010/12/6/what-the-heck-are-you-actually-using-nosql-for.html
+
+http://www.c4learn.com/c-programs/c-program-to-implement-stack-operations-using-array.html
+
+http://cplus.about.com/od/introductiontoprogramming/p/enumeration.htm
+
+http://www.geeksforgeeks.org/count-ways-reach-nth-stair/
+
+http://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-1s/
+
+http://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-1s/
+
+
+http://www.geeksforgeeks.org/sum-of-two-linked-lists/
+
+class Cat: public Animal
+
+Call base constructor in derived constructor:
+Son (int a): Mother(a)
+
+Multiple inheritance:
+class Rectangle: public Polygon, public Output;
+
+Base class pointer to derived class:
+Rectangle rect;
+Polygon *poly= &rect;
+or
+Polygon *poly= new Triangle(4,5);
+
+Line( const Line &obj);  // copy constructor
+
+Line::Line(const Line &obj) (outside class definition)
+
+  Test& operator = (const Test &t)
+t2 = t1;  // calls assignment operator, same as "t2.operator=(t1);"
+Test t3 = t1;  // calls copy constructor, same as "Test t3(t1);"
+
+The copy constructor takes a reference to a const parameter. It is const to guarantee that the copy constructor doesn't change it, and it is a reference because a value parameter would require making a copy, which would invoke the copy constructor, which would make a copy of its parameter, which would invoke the copy constructor, which ...
+
+The answer lies above in the list that shows the cases where a copy constructor is called. A copy constructor is called when a parameter is passed by value. If we pass our cSource parameter by value, it would need to call the copy constructor to do so. But calling the copy constructor again would mean the parameter is passed by value again, requiring another call to the copy constructor. This would result in an infinite recursion (well, until the stack memory ran out and the the program crashed).
+
+http://stackoverflow.com/questions/225929/what-is-the-exact-problem-with-multiple-inheritance
+
+http://geeksquiz.com/copy-constructor-in-cpp/
+
+For phone numbers: Map<String, List<Integer>>
+
+If B is a shallow copy of A, then it is like B = [A assign];
+
+B and A point to the same memory location
+
+If B is a deep copy of A, then it is like B = [A copy];
+
+B and A point to different memory locations
+
+B memory size is same as A's
+
+B has same contents as A's
+
+
+   Test& operator = (const Test &t)// assignment operator
+
+
+char * Source = "Hello, world.";
+
+char * ShallowCopy = Source;	
+
+char * DeepCopy = new char(strlen(Source)+1);
+strcpy(DeepCopy,Source);
+
+
+
+
+String::String(const String& old_str)
+{
+    size = old_str.size;
+    s = new char[size+1];
+    strcpy(s, old_str.s);
+}//deep copy
+
+
+
+http://www.geeksforgeeks.org/this-pointer-in-c/
+
+For base class pointers, base class functions called if not virtual.
+http://www.cplusplus.com/doc/tutorial/polymorphism/
+
