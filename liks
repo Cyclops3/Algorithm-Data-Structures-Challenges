@@ -107,3 +107,37 @@ http://www.geeksforgeeks.org/this-pointer-in-c/
 For base class pointers, base class functions called if not virtual.
 http://www.cplusplus.com/doc/tutorial/polymorphism/
 
+SELECT column_1,column_2...
+FROM table_1
+[INNER | LEFT |RIGHT] JOIN table_2 ON conditions
+WHERE conditions
+GROUP BY group 
+HAVING group_conditions
+ORDER BY column_1 [ASC | DESC]
+LIMIT offset, row_count
+
+CREATE [UNIQUE|FULLTEXT|SPATIAL] INDEX index_name
+USING [BTREE | HASH | RTREE] 
+ON table_name (column_name [(length)] [ASC | DESC],...)
+
+http://www.programmerinterview.com/index.php/database-sql/find-nth-highest-salary-sql/
+
+http://www.dcs.ed.ac.uk/home/adamd/essays/ex1.html
+
+http://www.programmerinterview.com/index.php/c-cplusplus/diamond-problem/
+
+class singleton {
+   singleton() {}
+   singleton(const singleton&);
+   singleton& operator=(const singleton&);
+public:
+   singleton& Get()
+   {
+      static singleton sing;
+      return sing;
+   }
+};
+
+http://www.geeksforgeeks.org/write-an-efficient-c-function-to-convert-a-tree-into-its-mirror-tree/
+
+
